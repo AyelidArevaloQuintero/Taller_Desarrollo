@@ -1,3 +1,12 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del Header */
 header {
     background-color: #333;
     color: #fff;
@@ -15,24 +24,25 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-}
-
-header nav ul li {
-    margin-right: 20px;
+    justify-content: center; /* Centra los elementos */
+    gap: 30px; /* Agrega espacio entre enlaces */
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.2s ease;
+    font-size: 16px;
+    padding: 10px;
 }
 
 header nav ul li a:hover {
     color: #ccc;
 }
 
+/* Ajuste para evitar que el header cubra el contenido */
 main {
+    padding-top: 120px; /* Aumenta el espacio para que el título sea visible */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,30 +53,65 @@ main h2 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
+    margin-top: 11%;
 }
 
+
+/* Sección Sobre Nosotros */
 .contenido {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    gap: 20px; /* Agrega espacio */
 }
 
 .contenido p {
-    width: 60%;
-    margin-right: 20px;
-    text-align: justify;
+    width: 100%; /* En móviles, que ocupe todo */
+    margin-right: 0; /* Elimina margen en móviles */
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .contenido img {
-    width: 30%;
-    height: 150px;
+    width: 80%;
+    max-width: 300px; /* Para que no crezca demasiado */
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer p{
+/* Estilos del Footer */
+footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 5%; 
+}
+
+footer p {
     color: #257362;
     font-size: 14px;
-    text-align: center;
+    margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenido img {
+        width: 90%;
+    }
 }

@@ -1,7 +1,16 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 15px 0;
     text-align: center;
     position: fixed;
     top: 0;
@@ -15,16 +24,19 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 header nav ul li {
-    margin-right: 20px;
+    display: inline;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
     transition: color 0.2s ease;
 }
 
@@ -32,41 +44,58 @@ header nav ul li a:hover {
     color: #ccc;
 }
 
+/* Contenido principal */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-}
-
-main h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    padding: 40px 20px;
+    margin-top: 80px; /* Ajuste para evitar que el header tape el contenido */
     text-align: center;
 }
 
+main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Sección de contenido */
 .contenido {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    max-width: 1000px;
+    gap: 30px;
 }
 
 .contenido p {
     width: 60%;
-    margin-right: 20px;
+    font-size: 18px;
+    line-height: 1.6;
     text-align: justify;
+    color: #444;
 }
 
 .contenido img {
-    width: 30%;
-    height: 150px;
+    width: 35%;
+    max-width: 350px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
-footer p{
-    color: #257362;
-    font-size: 14px;
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ddd;
 }
