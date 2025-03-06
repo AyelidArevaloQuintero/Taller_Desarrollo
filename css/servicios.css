@@ -1,0 +1,88 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.servicio h3{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #008000;
+}
+
+.servicio p{
+    width: 60%;
+    margin-right: 20px;
+    color: #666666;
+}
+
+.servicio img{
+    width: 30%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Sombras*/
+}
+
+footer p{
+    color: #257362;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*Estilos de los colores*/
+
+.verde-claro {
+    background-color: #c6efce;
+}
+
+.verde-oscuro {
+    background-color: #008000;
+}
+
+.marron-claro {
+    background-color: #f5f5dc;
+}
+
+.azul-cielo {
+    background-color: #87ceed;
+}
